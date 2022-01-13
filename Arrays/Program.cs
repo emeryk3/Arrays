@@ -33,7 +33,8 @@ namespace Arrays
             */
 
             /* Sorting Arrays
-             * Arrays can be sorted in order, either ascending or descending. You can use the sort() method to sort the array.*/
+             * Arrays can be sorted in order, either ascending or descending. You can use the sort() method to sort the array.
+             * SYNTAX: Array.Sort(arrayname); */
 
             /*
             string[] cars = new string[] { "Audi", "BMW", "Toyota", "Honda", "Lexus" };
@@ -49,6 +50,7 @@ namespace Arrays
 
             // Sorting the arrays but in descending order.
 
+            /*
             string[] cars = new string[] { "Audi", "BMW", "Toyota", "Honda", "Lexus" };
 
             Array.Sort(cars);
@@ -59,7 +61,17 @@ namespace Arrays
                 Console.WriteLine(car);
             }
             Console.ReadLine();
+            */
 
+            /* Array of any size:
+             * In the above example the array has a size of 5, however you can create an array of any size.
+             * SYNTAX: string[] <array name> =  {array items};
+             * In the below example, the output is Snickers. */
+
+            string[] chocolates = { "Snickers", "Bounty", "Twix", "Flake", "Twirl" };
+
+            Console.WriteLine(chocolates[0]);
+            Console.ReadLine(); // "Snickers"
 
         }
     }
