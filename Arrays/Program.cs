@@ -11,6 +11,7 @@ namespace Arrays
         static void Main(string[] args)
         {
             /* We can identify an array by the square brackets []
+             * Arrays are useful when you want to store multiple values in a variable.
              * The below example will print out 'BMW' as it is the second string in the car array (as arrays start at 1).
              * Additionally, the numbers of values in the brackets (it’s currently 5) must match the array size, so if you added another car company, for example Honda, it would give a compile-time error. When you declare the array type like ‘string’ or ‘integer’, you cannot store a double or any other data type.*/
 
@@ -68,11 +69,25 @@ namespace Arrays
              * SYNTAX: string[] <array name> =  {array items};
              * In the below example, the output is Snickers. */
 
+            /*
             string[] chocolates = { "Snickers", "Bounty", "Twix", "Flake", "Twirl" };
 
             Console.WriteLine(chocolates[0]);
             Console.ReadLine(); // "Snickers"
+            */
 
+            /* Converting String to Array:
+             * You can use the ToCharArray() method to convert a string to an array.
+             * First, we create a variable called 'text'.
+             * Next, we take one letter and put it into an array.
+             * Then we reverse the orer and print out the result. */
+
+            string text = "Hello World!";
+            char[] myText = text.ToCharArray();
+            Array.Reverse(myText);
+
+            Console.WriteLine(myText);
+            Console.ReadLine(); // "!dlroW olleH"
         }
     }
 }
