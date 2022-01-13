@@ -35,6 +35,7 @@ namespace Arrays
             /* Sorting Arrays
              * Arrays can be sorted in order, either ascending or descending. You can use the sort() method to sort the array.*/
 
+            /*
             string[] cars = new string[] { "Audi", "BMW", "Toyota", "Honda", "Lexus" };
 
             Array.Sort(cars);
@@ -44,6 +45,21 @@ namespace Arrays
                 Console.WriteLine(car);
             }
             Console.ReadLine();
+            */
+
+            // Sorting the arrays but in descending order.
+
+            string[] cars = new string[] { "Audi", "BMW", "Toyota", "Honda", "Lexus" };
+
+            Array.Sort(cars);
+            Array.Reverse(cars);
+
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car);
+            }
+            Console.ReadLine();
+
 
         }
     }
