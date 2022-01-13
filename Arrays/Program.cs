@@ -22,7 +22,22 @@ namespace Arrays
             /* Looping through arrays
              * Using a foreach statement you can loop through an array and get all the values.*/
 
+            /*
             string[] cars = new string[] { "Audi", "BMW", "Toyota", "Honda", "Lexus" };
+
+            foreach (var car in cars)
+            {
+                Console.WriteLine(car);
+            }
+            Console.ReadLine();
+            */
+
+            /* Sorting Arrays
+             * Arrays can be sorted in order, either ascending or descending. You can use the sort() method to sort the array.*/
+
+            string[] cars = new string[] { "Audi", "BMW", "Toyota", "Honda", "Lexus" };
+
+            Array.Sort(cars);
 
             foreach (var car in cars)
             {
